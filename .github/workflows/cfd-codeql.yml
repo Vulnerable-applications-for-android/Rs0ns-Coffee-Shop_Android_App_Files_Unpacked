@@ -78,6 +78,7 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@3fbe033aaae657f011f88f29be9e65ed26bd29ef
       with:
+        gradle-version: 7.3.3
         arguments: build
 
     - name: Perform CodeQL Analysis
